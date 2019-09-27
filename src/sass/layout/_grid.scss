@@ -1,7 +1,9 @@
 .grid {
-    width: 90%;
+  width: 90%;
 
-    margin: auto;
+  margin: auto;
 
-    display: flex;
+  display: flex;
+  flex-flow: column wrap;
+	max-height: 1600px;
 }
