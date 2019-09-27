@@ -2,5 +2,11 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  color: $color-light-gray-1;
+  color: $color-dark-gray-1;
+}
+
+.header {
+  &__main {
+    text-align: center;
+  }
 }
