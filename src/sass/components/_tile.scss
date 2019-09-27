@@ -1,0 +1,9 @@
+.tile{
+    margin: 1rem;
+
+    overflow: hidden;
+    cursor: pointer;
+
+    border-radius: 4px;
+    @include shadow-tile;
+}

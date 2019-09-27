@@ -67,3 +67,7 @@ $breakpoint choices:
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin shadow-tile {
+  box-shadow: 0 0 1rem rgba(0,0,0, .7);
+}
