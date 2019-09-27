@@ -1,13 +1,4 @@
-
-//  FUNCTIONS
-////////////////////////////////////////
-import backdrop from "./js/Backdrop";
-import cardRotate from './js/Card';
-import closeButton from './js/CloseButton';
-import scroll from './js/Scroll';
-import SideDrawer from "./js/SideDrawer";
-import topper from './js/Topper';
-
+import modal from './js/Modal';
 
 const scss = require('./sass/main.scss');
 

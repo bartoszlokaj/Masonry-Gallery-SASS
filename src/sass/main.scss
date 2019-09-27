@@ -1,9 +1,13 @@
-@import "abstracts/variables";
+@import "abstracts/animations";
 @import "abstracts/mixins";
+@import "abstracts/variables";
 
 @import "base/base";
 @import "base/typography";
 
+@import "components/backdrop";
+@import "components/close";
+@import "components/modal";
 @import "components/tile";
 
 @import "layout/grid";
