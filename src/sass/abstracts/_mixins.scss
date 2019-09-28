@@ -22,13 +22,9 @@ Mobile = 520px
   }
 }
 
-@mixin shadow {
-  box-shadow: 0 0 .7rem rgba(0,0,0, .6);
-}
+@mixin shadow { box-shadow: 0 0 .7rem rgba(0,0,0, .6); }
 
-@mixin shadowSpreaded {
-  box-shadow: 0 0 .7rem 2px rgba(0,0,0, .6);
-}
+@mixin shadowSpreaded { box-shadow: 0 0 .7rem 2px rgba(0,0,0, .6); }
 
 @mixin absoluteCenter {
   position: absolute;
