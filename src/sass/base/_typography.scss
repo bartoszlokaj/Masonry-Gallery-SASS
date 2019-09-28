@@ -19,3 +19,13 @@ body {
   font-size: 1.7rem;
   color: $color-light-gray-1;
 }
+
+.link {
+  color: $color-primary;
+  text-decoration: none;
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
