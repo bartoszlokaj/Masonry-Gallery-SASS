@@ -24,6 +24,11 @@
     filter: brightness(80%);
   }
 
+  &:hover &__caption {
+    color: $color-primary;
+    font-size: 2rem;
+  }
+
   &__caption {
     position: absolute;
     bottom: 0;
@@ -33,6 +38,8 @@
 
     background: linear-gradient(to right top, $color-black 0%, transparent 50%);
     padding: 3rem 2rem 1rem 1rem;
+    transition: all 0.25s ease-out;
+
   }
 
   @include respond(tablet) {
