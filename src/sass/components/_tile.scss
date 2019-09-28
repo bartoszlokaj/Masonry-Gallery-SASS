@@ -2,14 +2,14 @@
   position: relative;
 
   width: 33.333333%;
-  margin: .5rem;
+  margin: 5px;
 
   border-radius: 2px;
   overflow: hidden;
 
   transition: all 0.2s ease-in-out;
 
-  cursor: pointer;
+  cursor: zoom-in;
   @include shadow;
 
   &__image {
@@ -20,13 +20,13 @@
   }
 
   &:hover &__image {
-    transform: scale(1.07);
+    transform: scale(1.06);
     filter: brightness(80%);
   }
 
   &:hover &__caption {
     color: $color-primary;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   &__caption {
@@ -48,5 +48,6 @@
 
   @include respond(mobile) {
     width: 100%;
+    margin: 5px 0;
   }
 }
