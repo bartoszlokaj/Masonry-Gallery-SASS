@@ -10,12 +10,12 @@
   z-index: 100;
   cursor: zoom-out;
 
-  display: none;
-
-  animation: backdropOut .2s ease-in-out forwards;
+  
+  // animation: backdropOut .2s ease-in-out forwards;
+  // display: none;
 
   &Active {
-    display: block;
+    // display: block;
     animation: backdropIn .2s ease-in-out forwards;
   }
 }
