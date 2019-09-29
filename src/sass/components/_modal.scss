@@ -10,12 +10,15 @@
   overflow: hidden;
   @include shadow;
 
+  display: none;
+
   transform: translateY(-100vh);
   opacity: 0;
 
   animation: modalOut 0.2s ease-in-out forwards;
 
   &Active {
+    display: block;
     animation: modalIn 0.2s ease-in-out forwards;
   }
 

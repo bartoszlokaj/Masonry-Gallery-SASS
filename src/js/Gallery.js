@@ -1,14 +1,13 @@
 const gallery = () => {
   const current = document.querySelector("#current");
-  const imgs = document.querySelectorAll(".tile__image");
+  const tiles = document.querySelectorAll(".tile");
 
-  imgs.forEach(img =>
-    img.addEventListener("click", e => {
-      current.src = e.target.src;
-    })
-  );
-
-  console.log("hello from gallery!");
+  tiles.forEach(tile => {
+    tile.addEventListener("click", () => {
+      let src = tile.firstChild.src;
+      current.src = src;
+    });
+  });
 };
 gallery();
 

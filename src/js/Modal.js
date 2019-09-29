@@ -1,12 +1,10 @@
 const modal = () => {
-  const tiles = document.querySelectorAll(".tile");
-  const tilesAr = Array.from(tiles);
+  const tiles = document.querySelectorAll(".tile"),
+        backdrop = document.querySelector(".backdrop"),
+        modal = document.querySelector(".modal"),
+        close = document.querySelector(".close");
 
-  const backdrop = document.querySelector(".backdrop");
-  const modal = document.querySelector(".modal");
-  const close = document.querySelector(".close");
-
-  tilesAr.forEach((el, index) => {
+  tiles.forEach(el => {
     el.addEventListener("click", () => {
       backdrop.classList.add("backdropActive");
       modal.classList.add("modalActive");
@@ -22,8 +20,6 @@ const modal = () => {
     backdrop.classList.toggle("backdropActive");
     modal.classList.toggle("modalActive");
   });
-
-  console.log("hello from backdrop");
 };
 
 modal();
