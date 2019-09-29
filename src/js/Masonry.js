@@ -1,3 +1,4 @@
+const imagesLoaded = require('imagesloaded');
 const masonry = (grid, gridCell, gridGutter, dGridCol, tGridCol, mGridCol) => {
   console.log("hello from masonry");
 

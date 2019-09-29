@@ -1,14 +1,11 @@
 .grid {
-  width: 80%;
+  width: 100%;
   margin: auto;
   padding: 1rem;
   padding-bottom: 3rem;
-
+  
   display: flex;
   flex-flow: column wrap;
-
-  @include respond(mobile) {
-    width: 100%;
-    max-height: unset;
-  }
+  
+  @include respond(tablet) { width: 80%; }
 }
