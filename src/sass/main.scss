@@ -1,4 +1,8 @@
 
+@import "abstracts/animations";
+@import "abstracts/mixins";
+@import "abstracts/variablabstracts";
+
 @import "base/base";
 @import "base/typography";
 
@@ -10,7 +14,4 @@
 @import "layout/grid";
 @import "layout/footer";
 
-@import "utils/animations";
-@import "utils/mixins";
-@import "utils/variables";
 
