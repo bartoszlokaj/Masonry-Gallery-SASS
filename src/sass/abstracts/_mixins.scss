@@ -1,28 +1,3 @@
-// MEDIA QUERY MENAGER
-/*
-1em = 16px
-
-Desktop = >1920px
-Tablet = 768px
-Mobile = 520px
-*/
-
-// Desktop first approach
-// @mixin respond($breakpoint) {
-
-//   @if $breakpoint == mobile {
-//     @media (max-width: 32.5em) { @content };       //520px
-//   }
-
-//   @if $breakpoint == tablet {
-//     @media (max-width: 48em) { @content };      //768px
-//   }
-
-//   @if $breakpoint == desktop {
-//     @media (min-width: 120em) { @content };    //1920px
-//   }
-// }
-
 // Mobile first approach
 @mixin respond($breakpoint) {
   
