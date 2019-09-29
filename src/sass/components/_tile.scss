@@ -19,7 +19,7 @@
 
   &:hover &__image {
     transform: scale(1.06);
-    filter: brightness(80%);
+    filter: grayscale(70%);
   }
 
   &:hover &__caption {

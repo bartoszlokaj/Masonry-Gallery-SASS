@@ -1,3 +1,4 @@
+
 @import "abstracts/animations";
 @import "abstracts/mixins";
 @import "abstracts/variables";
@@ -7,8 +8,10 @@
 
 @import "components/backdrop";
 @import "components/close";
-@import "components/footer";
 @import "components/modal";
 @import "components/tile";
 
 @import "layout/grid";
+@import "layout/footer";
+
+
