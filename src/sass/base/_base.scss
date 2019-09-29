@@ -7,17 +7,11 @@
 }
 
 html {
-  font-size: 62.5%; // 1rem = 10px
-
-  @include respond(laptop) {
-    font-size: 50%; //1rem = 8px
-  }
-
-  @include respond(big-desktop) {
-    font-size: 75%; //1rem = 12px
-  }
-
   scroll-behavior: smooth;
+  font-size: 50%; //1rem = 8px
+
+  @include respond(tablet) { font-size: 62.5%; } //1rem = 10px
+  @include respond(bigDesktop) { font-size: 100%; } // 1rem = 16px
 }
 
 body {

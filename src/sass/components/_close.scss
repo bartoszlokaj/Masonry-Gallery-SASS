@@ -3,10 +3,11 @@
   top: 0;
   right: 0;
 
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+
   padding: 0.5rem;
-  margin: 1rem;
+  margin: 2rem;
   border-radius: 50%;
 
   display: flex;
@@ -43,8 +44,8 @@
     }
   }
 
-  @include respond(mobile) {
-    width: 3.5rem;
-    height: 3.5rem;
+  @include respond(tablet) {
+    width: 4.5rem;
+    height: 4.5rem;
   }
 }

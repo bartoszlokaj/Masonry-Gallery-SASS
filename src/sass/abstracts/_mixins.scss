@@ -7,18 +7,39 @@ Tablet = 768px
 Mobile = 520px
 */
 
+// Desktop first approach
+// @mixin respond($breakpoint) {
+
+//   @if $breakpoint == mobile {
+//     @media (max-width: 32.5em) { @content };       //520px
+//   }
+
+//   @if $breakpoint == tablet {
+//     @media (max-width: 48em) { @content };      //768px
+//   }
+
+//   @if $breakpoint == desktop {
+//     @media (min-width: 120em) { @content };    //1920px
+//   }
+// }
+
+// Mobile first approach
 @mixin respond($breakpoint) {
-
-  @if $breakpoint == mobile {
-    @media (max-width: 32.5em) { @content };       //520px
-  }
-
+  
   @if $breakpoint == tablet {
-    @media (max-width: 48em) { @content };      //768px
+    @media (min-width: 48em) { @content };      //768px
   }
 
   @if $breakpoint == desktop {
-    @media (min-width: 120em) { @content };    //1920px
+    @media (min-width: 64em) { @content };    //1024px
+  }
+
+  @if $breakpoint == bigDesktop {
+    @media (min-width: 123em) { @content };    // >1920px
+  }
+
+  @if $breakpoint == land {
+    @media (orientation: landscape) { @content }
   }
 }
 

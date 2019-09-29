@@ -4,6 +4,8 @@
   left: 50%;
   z-index: 200;
 
+  width: 96%;
+
   border-radius: 4px;
   overflow: hidden;
   @include shadow;
@@ -22,15 +24,7 @@
     height: 100%;
   }
 
-  @include respond(tablet) {
-    width: 90%;
-  }
-  @include respond(mobile) {
-    width: 96%;
-  }
-}
-@media (orientation: landscape) {
-  .modal {
-    width: 58%;
-  }
+  @include respond(tablet) { width: 90%; }
+  @include respond(desktop) { width: unset; }
+  @include respond(land) { width: 58%; }
 }
