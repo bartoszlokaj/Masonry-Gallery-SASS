@@ -3,14 +3,13 @@
   top: 50%;
   left: 50%;
   z-index: 200;
-  
+
   border-radius: 4px;
   overflow: hidden;
   @include shadow;
 
   transform: translateY(-100vh);
   opacity: 0;
-
 
   animation: modalOut 0.2s ease-in-out forwards;
 
@@ -23,6 +22,15 @@
     height: 100%;
   }
 
-  @include respond(tablet) { width: 90%; }
-  @include respond(mobile) { width: 96%; }
+  @include respond(tablet) {
+    width: 90%;
+  }
+  @include respond(mobile) {
+    width: 96%;
+  }
+}
+@media (orientation: landscape) {
+  .modal {
+    width: 58%;
+  }
 }
