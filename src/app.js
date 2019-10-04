@@ -1,7 +1,10 @@
-import gallery from './js/Gallery';
-import modal from './js/Modal';
-import masonry from './js/Masonry';
+// import fontMuller from './fonts/muller/muller-regular-webfont.ttf'
 
-const scss = require('./sass/main.scss');
+import IntroductionBackground from "./img/introduction_background-1.png";
+import '../node_modules/jquery/dist/jquery.js';
+import "./js/Modal";
+import"./js/DatePicker";
+
+import './sass/main.scss';
 
 console.log('Hello from app.js');
