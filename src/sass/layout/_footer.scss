@@ -1,0 +1,16 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    padding: .5rem;
+    
+
+    background-color: $color-dark-gray-2;
+    color: $color-light-gray-1;
+    text-align: center;
+    font-size: 1.2rem;
+    
+
+    @include respond(tablet) { padding: 1rem; }
+}
